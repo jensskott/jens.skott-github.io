@@ -82,6 +82,10 @@ h2:after {
     line-height: 145%;
 }
 
+.row ul {
+    margin-left: 25%;
+}
+
 .icon-big {
     font-size: 350%;
     display: block;
@@ -152,10 +156,42 @@ header {
     color: #16a085; 
 }
 
-/** -------- **/
-/** features **/
-/** -------- **/
+/* -------- */
+/* features */
+/* -------- */
 
 .section-about .about-copy {
     margin-bottom: 30px;
+}
+
+/* -------- */
+/* showcase */
+/* -------- */
+
+.section-showcase{
+    padding: 0;
+    margin-top: 30px;
+}
+
+/*.skills-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.skills-showcase li {
+    display: block;
+    float: left;
+    width: 16.6%;
+}*/
+
+.skills-logo {
+    width: 25%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.skills-logo img {
+    width: 70%;
+    height: auto;
 }
