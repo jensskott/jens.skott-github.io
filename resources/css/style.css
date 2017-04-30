@@ -1,8 +1,6 @@
 /** ----------- **/
 /** Basic setup **/
 /** ----------- **/
-/** Orange color: #e67e22 **/
-/** Orange faded: #bf6516 **/
 
 * {
     margin: 0px;
@@ -17,6 +15,16 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
+.clearfix {zoom:1}
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 
 
 /** ------------------- **/
@@ -93,6 +101,18 @@ h2:after {
     margin-bottom: 10px;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 50px;
+    color: #16a085;
+    text-align: center;
+    font-size: 120%;
+    /* secret */
+    line-height: 110%;
+    margin-top: -4px; 
+    margin-right: -5px;
+}
+
 /* ------ */
 /* Header */
 /* ------ */
@@ -102,6 +122,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .gear-text-box {
@@ -157,41 +178,21 @@ header {
 }
 
 /* -------- */
-/* features */
-/* -------- */
-
-.section-about .about-copy {
-    margin-bottom: 30px;
-}
-
-/* -------- */
 /* showcase */
 /* -------- */
 
-.section-showcase{
-    padding: 0;
-    margin-top: 30px;
+.section-showcase {
+    background-color: #f4f4f4;
 }
 
-/*.skills-showcase {
-    list-style: none;
-    width: 100%;
+.section-showcase i {
+    line-height: 150%;
+    text-align: left;
+    color: #47e6c7;
 }
 
-.skills-showcase li {
+.showcase-feature {
     display: block;
-    float: left;
-    width: 16.6%;
-}*/
-
-.skills-logo {
-    width: 25%;
-    margin: 0;
-    overflow: hidden;
-    background-color: #fff;
+    margin-bottom: 5px;
 }
 
-.skills-logo img {
-    width: 70%;
-    height: auto;
-}
